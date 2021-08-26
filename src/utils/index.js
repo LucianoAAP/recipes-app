@@ -1,5 +1,3 @@
-import { useCallback, useState } from 'react';
-
 // Regex source: https://gist.github.com/dreamstarter/9231254
 export const validateLogin = (email, password) => {
   const regex = /^([A-Za-z0-9_\-.+])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,})$/;
@@ -16,29 +14,45 @@ export const saveLoginLocalStorage = (email) => {
   localStorage.setItem('user', JSON.stringify(user));
 };
 
-// Custom hook taken from an Instagram post of https://linktr.ee/imateus.silva
-export const useLocalStorage = (key, initialValue = '') => {
-  const [state, setState] = useState(() => {
-    try {
-      const storedValue = localStorage.getItem(key);
-      return storedValue ? JSON.parse(storedValue) : initialValue;
-    } catch (error) {
-      return initialValue;
-    }
-  });
-
-  const setValue = useCallback((value) => {
-    try {
-      setState(value);
-      localStorage.setItem(key, JSON.stringify(value));
-    } catch (error) {
-      console.log(error);
-    }
-  }, [key]);
-  return [state, setValue];
-};
-
 export const doesItExist = (key) => {
   if (key) return key;
   return [];
 };
+
+export const doesInprogressExist = (key) => {
+  if (key) return key;
+  return {
+    cocktails: {},
+    meals: {},
+  };
+};
+
+export const createIngredients = (response, max) => {
+  const newIngredients = [];
+  for (let index = 1; index <= max; index += 1) {
+    const name = response[0][`strIngredient${index}`];
+    const measure = response[0][`strMeasure${index}`];
+    if (name) {
+      const ingredient = {
+        name,
+        measure,
+        done: false,
+      };
+      newIngredients.push(ingredient);
+    }
+  }
+  return newIngredients;
+};
+
+export const createDecorations = (ingredients) => {
+  const newDecorations = ingredients.map((ingredient) => {
+    if (ingredient.done) {
+      return ({ textDecoration: 'line-through' });
+    }
+    return {};
+  });
+  return newDecorations;
+};
+
+export const handleDisabled = (ingredients) => !ingredients
+  .every((ingredient) => ingredient.done);
