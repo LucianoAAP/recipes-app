@@ -25,12 +25,23 @@ const ExploreByIngredientsCard = ({ ingredient, tag, index }) => {
 
   return (
     <div
+      className="ingredient-card"
       data-testid={ `${index}-ingredient-card` }
       onClick={ handleRedirect }
       aria-hidden="true"
     >
-      <img src={ imgSrc } alt={ ingredientName } data-testid={ `${index}-card-img` } />
-      <p data-testid={ `${index}-card-name` }>{ ingredientName }</p>
+      <img
+        className="explored-ingredient-photo"
+        src={ imgSrc }
+        alt={ ingredientName }
+        data-testid={ `${index}-card-img` }
+      />
+      <p
+        className="explored-ingredient-name"
+        data-testid={ `${index}-card-name` }
+      >
+        { ingredientName }
+      </p>
     </div>
   );
 };

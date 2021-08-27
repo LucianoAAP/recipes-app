@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getFoodIngredients } from '../../services/foodAPI';
 import ExploreByIngredientsCard from '../ExploreByIngredientsCard';
+import Loading from '../Loading';
+import './style.css';
 
 const MealsIngredientsExplore = () => {
   const [ingredients, setIngredients] = useState([]);
@@ -16,8 +18,10 @@ const MealsIngredientsExplore = () => {
     fetchIngredients();
   }, []);
 
+  if (ingredients.length === 0) return <Loading />;
+
   return (
-    <div>
+    <div className="ingredient-cards-container">
       { ingredients.map((ingredient, index) => (
         <ExploreByIngredientsCard
           key={ `ingredient-${index}` }
