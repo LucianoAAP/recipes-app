@@ -9,21 +9,22 @@ const DrinksIngredientsExplore = () => {
   useEffect(() => {
     const fetchIngredients = async () => {
       const response = await getDrinkIngredients();
-      setIngredients(response);
+      const filteredResponse = response
+        .filter((_ingredient, num) => num < maxIngredients);
+      setIngredients(filteredResponse);
     };
     fetchIngredients();
-  });
+  }, []);
 
   return (
     <div>
-      { ingredients.filter((_gerIngredient, num) => num < maxIngredients)
-        .map((ingredient, index) => (
-          <ExploreByIngredientsCard
-            key={ `ingredient-${index}` }
-            ingredient={ ingredient }
-            tag="cocktail"
-            index={ index }
-          />)) }
+      { ingredients.map((ingredient, index) => (
+        <ExploreByIngredientsCard
+          key={ `ingredient-${index}` }
+          ingredient={ ingredient }
+          tag="cocktail"
+          index={ index }
+        />)) }
     </div>
   );
 };
