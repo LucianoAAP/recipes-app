@@ -3,10 +3,10 @@ import { screen } from '@testing-library/react';
 // import userEvent from '@testing-library/user-event';
 import renderWithReduxAndRouter from './renderWithReduxRouter';
 import App from '../App';
-import oneMeal from '../../cypress/mocks/oneMeal';
-import drinks from '../../cypress/mocks/drinks';
-import oneDrink from '../../cypress/mocks/oneDrink';
-import meals from '../../cypress/mocks/meals';
+import oneMeal from './mocks/data/oneMeal';
+import drinks from './mocks/data/drinks';
+import oneDrink from './mocks/data/oneDrink';
+import meals from './mocks/data/meals';
 
 const NUMBER_EIGHT = 8;
 const NUMBER_THREE = 3;

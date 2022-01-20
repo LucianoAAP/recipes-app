@@ -1,12 +1,12 @@
-import meals from '../../../cypress/mocks/meals';
-import areas from '../../../cypress/mocks/areas';
-import emptyMeals from '../../../cypress/mocks/emptyMeals';
-import japaneseMeals from '../../../cypress/mocks/japaneseMeals';
-import mealCategories from '../../../cypress/mocks/mealCategories';
-import mealIngredients from '../../../cypress/mocks/mealIngredients';
-import drinkIngredients from '../../../cypress/mocks/drinkIngredients';
-import mealsByIngredient from '../../../cypress/mocks/mealsByIngredient';
-import drinksByIngredient from '../../../cypress/mocks/drinksByIngredient';
+import meals from './data/meals';
+import areas from './data/areas';
+import emptyMeals from './data/emptyMeals';
+import japaneseMeals from './data/japaneseMeals';
+import mealCategories from './data/mealCategories';
+import mealIngredients from './data/mealIngredients';
+import drinkIngredients from './data/drinkIngredients';
+import mealsByIngredient from './data/mealsByIngredient';
+import drinksByIngredient from './data/drinksByIngredient';
 
 const mockFetch = async (url) => ({
   json: async () => {

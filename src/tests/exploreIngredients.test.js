@@ -3,8 +3,8 @@ import { screen, fireEvent } from '@testing-library/react';
 import renderWithReduxAndRouter from './renderWithReduxRouter';
 import App from '../App';
 import mockFetch from './mocks/mockFetch';
-import mealIngredients from '../../cypress/mocks/mealIngredients';
-import drinkIngredients from '../../cypress/mocks/drinkIngredients';
+import mealIngredients from './mocks/data/mealIngredients';
+import drinkIngredients from './mocks/data/drinkIngredients';
 
 const TWELVE = 12;
 
