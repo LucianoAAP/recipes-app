@@ -84,7 +84,7 @@ const FoodList = () => {
   if (error) {
     return (
       <div className="d-flex justify-content-center align-items-center">
-        <p>Algo deu errado, favor tentar novamente!</p>
+        <p>Something went wrong. Please try again!</p>
       </div>
     );
   }
@@ -93,7 +93,7 @@ const FoodList = () => {
     // eslint-disable-next-line no-alert
     alert('Sinto muito, não encontramos nenhuma receita para esses filtros.');
     setFilteredMeals(originalMeals);
-    return <p>Nenhuma receita encontrada...</p>;
+    return <p>No recipe found...</p>;
   }
 
   if (filteredMeals.length === 1 && !foodFilter) {

@@ -7,7 +7,7 @@ import {
 
 const Drinks = () => (
   <div>
-    <Header page="Bebidas" search />
+    <Header page="Drinks" search />
     <DrinkList />
     <Footer />
   </div>

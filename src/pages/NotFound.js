@@ -7,7 +7,7 @@ import {
 
 const NotFound = () => (
   <>
-    <Header page="Bebidas" search />
+    <Header page="Error" search />
     <NotFoundComponent />
     <Footer />
   </>

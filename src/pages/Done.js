@@ -6,7 +6,7 @@ import {
 
 const Done = () => (
   <div>
-    <Header page="Receitas Feitas" />
+    <Header page="Done Recipes" />
     <DoneRecipes />
   </div>
 );

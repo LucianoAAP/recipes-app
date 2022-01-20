@@ -37,7 +37,7 @@ const MealInProgress = () => {
   if (error) {
     return (
       <div className="d-flex justify-content-center align-items-center">
-        <p>Algo deu errado, favor tentar novamente!</p>
+        <p>Something went wrong. Please try again!</p>
       </div>
     );
   }

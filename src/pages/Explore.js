@@ -3,7 +3,7 @@ import { Footer, Header, ExploreCard } from '../components';
 
 const Explore = () => (
   <div>
-    <Header page="Explorar" />
+    <Header page="Explore" />
     <ExploreCard type="food" />
     <ExploreCard type="drink" />
     <Footer />

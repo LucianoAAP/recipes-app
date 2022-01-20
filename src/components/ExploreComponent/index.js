@@ -12,14 +12,14 @@ const ExploreComponent = () => {
         type="button"
         onClick={ () => history.push('/explorar/comidas') }
       >
-        Explorar Comidas
+        Explore Meals
       </Button>
       <Button
         data-testid="explore-drinks"
         type="button"
         onClick={ () => history.push('/explorar/bebidas') }
       >
-        Explorar Bebidas
+        Explore Drinks
       </Button>
     </div>
   );

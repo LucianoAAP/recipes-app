@@ -28,7 +28,7 @@ const LoginForm = () => {
         className="login-form"
         onSubmit={ handleSubmit }
       >
-        <h1>APP DE RECEITAS</h1>
+        <h1>RECIPES APP</h1>
 
         <img src={ chef } alt="Chef" />
         <h2>Login</h2>

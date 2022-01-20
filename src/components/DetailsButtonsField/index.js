@@ -56,7 +56,7 @@ const DetailsButtonsField = ({ recipeType, handleFavorite }) => {
           />
         </Button>
       </div>
-      { shared && <p className="link-shared">Link copiado!</p> }
+      { shared && <p className="link-shared">Link copied!</p> }
     </div>
   );
 };

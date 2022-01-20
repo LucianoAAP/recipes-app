@@ -3,7 +3,7 @@ import ExploreCard from '../components/ExploreCard';
 import { Footer, Header } from '../components';
 
 const ExploreFoods = () => {
-  const pageName = 'Explorar Comidas';
+  const pageName = 'Explore Meals';
   return (
     <div>
       <Header page={ pageName } />

@@ -21,7 +21,7 @@ const UserProfile = () => {
           data-testid="profile-done-btn"
           onClick={ () => history.push('/receitas-feitas') }
         >
-          Receitas Feitas
+          Done Recipes
         </Button>
 
         <Button
@@ -29,7 +29,7 @@ const UserProfile = () => {
           data-testid="profile-favorite-btn"
           onClick={ () => history.push('/receitas-favoritas') }
         >
-          Receitas Favoritas
+          Favorite Recipes
         </Button>
 
         <Button
@@ -38,7 +38,7 @@ const UserProfile = () => {
           onClick={ () => { clearEmail(); history.push('/'); } }
           data-testid="profile-logout-btn"
         >
-          Sair
+          Exit
         </Button>
       </section>
     </div>

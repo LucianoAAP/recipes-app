@@ -3,7 +3,7 @@ import { Header, FavoriteRecipes } from '../components';
 
 const Favorites = () => (
   <div>
-    <Header page="Receitas Favoritas" />
+    <Header page="Favorite Recipes" />
     <FavoriteRecipes />
   </div>
 );

@@ -6,7 +6,7 @@ import {
 import MealsIngredientsExplore from '../components/MealsIngredientsExplore';
 
 const ExploreFoodsIngredients = () => {
-  const pageName = 'Explorar Ingredientes';
+  const pageName = 'Explore by Ingredients';
   return (
     <div>
       <Header page={ pageName } />

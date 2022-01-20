@@ -1,6 +1,6 @@
 # The project
 
-This is a slightly modified version of a front-end group project I had to develop during my studies at the "Trybe" web development course. The application was made using React.js. It is an app for finding various meals and drinks recipes and it uses two APIs whose documentation can be found in:
+This is a slightly modified version of a front-end group project I had to develop during my studies at the "Trybe" web development course. The application was made using React.js and was designed for devices with a screen resolution of 360 x 640. It is an app for finding various meals and drinks recipes and it uses two APIs whose documentation can be found in:
 
 - https://www.themealdb.com/api.php
 - https://www.thecocktaildb.com/api.php

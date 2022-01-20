@@ -43,7 +43,7 @@ const StartRecipe = ({ recipeType, ingredients }) => {
             data-testid="start-recipe-btn"
             onClick={ handleResumeRecipe }
           >
-            Continuar Receita
+            Continue Recipe
           </Button>
         )
         : (

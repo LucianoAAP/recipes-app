@@ -16,32 +16,32 @@ const ExploreCard = ({ type }) => {
   let testId;
 
   if (type === 'food') {
-    text = 'Explorar Comidas';
+    text = 'Explore Meals';
     icon = mealIcon;
     path = '/explorar/comidas';
     testId = 'explore-food';
   } else if (type === 'drink') {
-    text = 'Explorar Bebidas';
+    text = 'Explore Drinks';
     icon = drinkIcon;
     path = '/explorar/bebidas';
     testId = 'explore-drinks';
   } else if (type === 'ingredientFood') {
-    text = 'Por Ingredientes';
+    text = 'By Ingredients';
     icon = listIcon;
     path = '/explorar/comidas/ingredientes';
     testId = 'explore-by-ingredient';
   } else if (type === 'ingredientDrink') {
-    text = 'Por Ingredientes';
+    text = 'By Ingredients';
     icon = listIcon;
     path = '/explorar/bebidas/ingredientes';
     testId = 'explore-by-ingredient';
   } else if (type === 'local') {
-    text = 'Por Local de Origem';
+    text = 'By Origin';
     icon = mapIcon;
     path = '/explorar/comidas/area';
     testId = 'explore-by-area';
   } else {
-    text = 'Me Surpreenda!';
+    text = 'Surprise Me!';
     icon = surpriseIcon;
     path = false;
     testId = 'explore-surprise';

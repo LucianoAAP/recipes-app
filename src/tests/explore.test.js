@@ -4,8 +4,8 @@ import userEvent from '@testing-library/user-event';
 import renderWithReduxAndRouter from './renderWithReduxRouter';
 import App from '../App';
 
-const FOOD_BUTTON_TEXT_CONTENT = 'Explorar Comidas';
-const DRINK_BUTTON_TEXT_CONTENT = 'Explorar Bebidas';
+const FOOD_BUTTON_TEXT_CONTENT = 'Explore Meals';
+const DRINK_BUTTON_TEXT_CONTENT = 'Explore Drinks';
 
 describe('Testando Tela de Explorar', () => {
   it('tem 01 botão para redirecionar para tela de explorar comida', async () => {
@@ -15,7 +15,7 @@ describe('Testando Tela de Explorar', () => {
     expect(foodButton).toBeInTheDocument();
     expect(foodButton).toHaveTextContent(FOOD_BUTTON_TEXT_CONTENT);
     userEvent.click(foodButton);
-    const exploreFoodTitle = await screen.findByTestId('explore-by-ingredient'); // modificar teste depois da página de Explorar Comidas ficar pronta
+    const exploreFoodTitle = await screen.findByTestId('explore-by-ingredient');
     expect(exploreFoodTitle).toBeInTheDocument();
     const { location: { pathname } } = history;
     expect(pathname).toBe('/explorar/comidas');
@@ -28,7 +28,7 @@ describe('Testando Tela de Explorar', () => {
     expect(drinksButton).toBeInTheDocument();
     expect(drinksButton).toHaveTextContent(DRINK_BUTTON_TEXT_CONTENT);
     userEvent.click(drinksButton);
-    const exploreDrinkTitle = await screen.findByTestId('explore-by-ingredient'); // modificar teste depois da página de Explorar Bebidas ficar pronta
+    const exploreDrinkTitle = await screen.findByTestId('explore-by-ingredient');
     expect(exploreDrinkTitle).toBeInTheDocument();
     const { location: { pathname } } = history;
     expect(pathname).toBe('/explorar/bebidas');

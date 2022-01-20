@@ -8,7 +8,7 @@ const NotFoundComponent = () => {
   return (
     <div className="d-flex mt-4 flex-column align-items-center">
       <h2>Not Found</h2>
-      <p>Página não encontrada</p>
+      <p>Page not found</p>
       <Button
         size="lg"
         onClick={ () => history.goBack() }

@@ -6,7 +6,7 @@ import {
 } from '../components';
 
 const ExploreArea = () => {
-  const pageName = 'Explorar Origem';
+  const pageName = 'Explore by Origin';
   return (
     <div>
       <Header page={ pageName } search />

@@ -9,7 +9,7 @@ describe('Testando se a página notFound', () => {
     renderWithReduxAndRouter(<App />, {}, { route: '/xablau' });
 
     expect(screen.getByText('Not Found')).toBeInTheDocument();
-    expect(screen.getByText('Página não encontrada')).toBeInTheDocument();
+    expect(screen.getByText('Page not found')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Voltar' })).toBeInTheDocument();
   });
 });

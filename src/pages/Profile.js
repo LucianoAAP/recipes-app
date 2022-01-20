@@ -7,7 +7,7 @@ import {
 
 const Profile = () => (
   <>
-    <Header page="Perfil" />
+    <Header page="Profile" />
     <UserProfile />
     <Footer />
   </>

@@ -33,12 +33,12 @@ describe('Testando se o componente Header', () => {
   it('tem um Título com o nome da página dependendo da página', () => {
     const { history } = renderWithReduxAndRouter(<App />, {}, { route: '/comidas' });
 
-    expect(screen.getByTestId(PAGE_TITLE_TEST_ID)).toHaveTextContent('Comidas');
+    expect(screen.getByTestId(PAGE_TITLE_TEST_ID)).toHaveTextContent('Meals');
     history.push('/bebidas');
-    expect(screen.getByTestId(PAGE_TITLE_TEST_ID)).toHaveTextContent('Bebidas');
+    expect(screen.getByTestId(PAGE_TITLE_TEST_ID)).toHaveTextContent('Drinks');
     history.push('/explorar');
-    expect(screen.getByTestId(PAGE_TITLE_TEST_ID)).toHaveTextContent('Explorar');
+    expect(screen.getByTestId(PAGE_TITLE_TEST_ID)).toHaveTextContent('Explore');
     history.push('/perfil');
-    expect(screen.getByTestId(PAGE_TITLE_TEST_ID)).toHaveTextContent('Perfil');
+    expect(screen.getByTestId(PAGE_TITLE_TEST_ID)).toHaveTextContent('Profile');
   });
 });
