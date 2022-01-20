@@ -5,7 +5,7 @@ This is a slightly modified version of a front-end group project I had to develo
 - https://www.themealdb.com/api.php
 - https://www.thecocktaildb.com/api.php
 
-It also has unit tests currently covering about 60% of the files in "src".
+It also has unit tests currently covering about 60% of the files in the "src" folder.
 
 # Group participants
 
