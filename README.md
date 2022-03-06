@@ -54,3 +54,11 @@ Just run `npm start`
 
 - To run the integration tests, use `npm test`
 - To run the tests and see the testing coverage report, use `npm run test-coverage`
+
+# Contact
+
+## Luciano Almeida
+
+- Linkedin: https://www.linkedin.com/in/lucianoaap/
+- Github: https://www.linkedin.com/in/lucianoaap/
+- Email: lucianoalmeidaap@gmail.com
