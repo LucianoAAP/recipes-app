@@ -33,7 +33,9 @@ This project was a group effort developed by:
 
 # Getting started
 
-This project requires Node.js
+## Prerequisites
+
+This project requires the "NPM" package
 
 ## Installation
 
